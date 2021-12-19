@@ -1,0 +1,16 @@
+.m-icon {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.m-icon-add {
+    background-image: url('/contents/icon/add.png');
+}
+
+.m-icon-search {
+    background-image: url('/contents/icon/search.png');
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}

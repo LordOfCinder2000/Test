@@ -1,0 +1,81 @@
+.container__navbar {
+    position: relative;
+    width: calc(14.5% - 1px);
+    height: calc(100vh - 48px);
+    border-right: 1px solid #e5e5e5;
+}
+
+
+/* Danh sách */
+
+.container__navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container__navbar-item {
+    width: 100%;
+    height: 48px;
+}
+
+.container__navbar-item:first-child {
+    background-color: #019160;
+    color: #ffffff;
+}
+
+.container__navbar-item:first-child .container__navbar-item-text {
+    color: #ffffff;
+}
+
+.container__navbar-item-link {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    text-decoration: none;
+}
+
+.container__navbar-item-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.container__navbar-item-text {
+    padding-top: 3px;
+    font-family: GoogleSans;
+    color: #454545;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+
+/* fucus */
+
+.container__navbar-item--focus:active {
+    background-color: #019160;
+    color: #ffffff;
+    font-family: GoogleSansMedium;
+}
+
+.container__navbar-item--focus:visited {
+    background-color: #019160;
+    color: #ffffff;
+    font-family: GoogleSansMedium;
+}
+
+
+/* Hover */
+
+.container__navbar-item--focus:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+    font-family: GoogleSans;
+}
+
+.container__navbar-item--focus:hover span {
+    color: #ffffff;
+}

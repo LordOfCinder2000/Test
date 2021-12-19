@@ -1,0 +1,104 @@
+/* Phần trung */
+
+.header {
+    width: 100%;
+    height: 48px;
+    overflow: auto;
+}
+
+
+/* Phần logo */
+
+.header__logo {
+    float: left;
+    display: flex;
+    width: calc(14.5% - 1px);
+    border-right: 1px solid #e5e5e5;
+}
+
+.header__logo img {
+    height: 35px;
+    margin: auto 0px;
+}
+
+.header__toggle {
+    margin: 12px 10px 12px 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url(/contents/img/toggle.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+
+/* Phần chi nhánh */
+
+.header__name {
+    height: 100%;
+    float: left;
+    display: flex;
+}
+
+.header__name--stand-for {
+    text-align: center;
+    padding: 6px 0px 6px 24px;
+}
+
+.header__name--stand-for p {
+    margin: 0px;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background-color: #bbbbbb;
+    display: table-cell;
+    vertical-align: middle;
+    color: #01b075;
+    font-weight: bold;
+}
+
+.header__name--drop-down-list {
+    padding: 13px 0px 5px 0px;
+}
+
+.header__name--select-box {
+    margin: auto 1px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* Phần hình đại diện */
+
+.header__user {
+    display: flex;
+    float: right;
+    height: 100%;
+}
+
+.header__user--avatar {
+    margin: 6px;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+}
+
+.header__user--option {
+    margin: 12px 16px 12px 0px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: url(/contents/icon/option.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.header__user p {
+    margin-right: 16px;
+    padding-top: 3px;
+    font-weight: bold;
+}

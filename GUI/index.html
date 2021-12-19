@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/employee.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <button class="header__toggle"></button>
+            <img src="/contents/img/cukcuk-logo.png" alt="">
+        </div>
+
+        <div class="header__name">
+            <div class="header__name--stand-for">
+                <p>
+                    MS
+                </p>
+            </div>
+            <div class="header__name--drop-down-list">
+                <form action="" method="POST">
+                    <select class="header__name--select-box" name="myselect" id="myselect" onchange="">
+                        <option value="1">Chi nhánh MISA miền Bắc</option>
+                        <option value="2">Chi nhánh MISA miền Trung</option>
+                        <option value="3">Chi nhánh MISA miền Nam</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="header__user">
+            <img class="header__user--avatar" src="/contents/icon/avatar-default.png" alt="">
+            <p>Vũ Văn Quyết</p>
+            <button class="header__user--option" alt=""></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="container__navbar">
+            <ul class="container__navbar-list">
+                <li class="container__navbar-item container__navbar-item--focus">
+                    <a href="#" class="container__navbar-item-link">
+                        <img class="container__navbar-item-icon" src="/contents/icon/dashboard.png" alt="">
+                        <span class="container__navbar-item-text">Tổng quan</span>
+                    </a>
+                </li>
+                <li class="container__navbar-item container__navbar-item--focus">
+                    <a href="#" class="container__navbar-item-link">
+                        <img class="container__navbar-item-icon" src="/contents/icon/report.png" alt="">
+                        <span class="container__navbar-item-text">Báo cáo</span>
+                    </a>
+                </li>
+                <li class="container__navbar-item container__navbar-item--focus">
+                    <a href="#" class="container__navbar-item-link">
+                        <img class="container__navbar-item-icon" src="/contents/icon/document-online.png" alt="">
+                        <span class="container__navbar-item-text">Mua hàng</span>
+                    </a>
+                </li>
+                <li class="container__navbar-item container__navbar-item--focus">
+                    <a href="#" class="container__navbar-item-link">
+                        <img class="container__navbar-item-icon" src="/contents/icon/dic-employee.png" alt="">
+                        <span class="container__navbar-item-text">Danh mục nhân viên</span>
+                    </a>
+                </li>
+                <li class="container__navbar-item container__navbar-item--focus">
+                    <a href="#" class="container__navbar-item-link">
+                        <img class="container__navbar-item-icon" src="/contents/icon/setting.png" alt="">
+                        <span class="container__navbar-item-text">Thiết lập hệ thống</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="m-button-second m-button-minimize">
+            </button>
+        </div>
+
+        <!-- Phần chính  -->
+        <div class="container__main">
+            <div class="container__main-header">
+                <div class="container__main-header-title">
+                    <span>Quản lý nhân viên</span>
+                </div>
+                <div class="container__main-header-feature">
+                    <button class="m-button m-button-icon">
+                        <div class="m-icon m-icon-add"></div>
+                        <span>Thêm Nhân viên</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container__main-filter">
+                <div class="container__main-filter--left">
+                    <input class="m-icon-search m-input m-input-search" type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
+                    <select class="m-drop-down-list" name="" id="">
+                        <option value="">Tất cả phòng ban</option>
+                    </select>
+                    <select class="m-drop-down-list" name="" id="">
+                        <option value="">Tất cả vị trí</option>
+                    </select>
+                </div>
+                <div class="container__main-filter--right">
+                    <button class="m-button-second m-button-refresh">
+
+                    </button>
+                </div>
+            </div>
+            <div class="container__main-grid grid-employee">
+                <table cellspacing=0>
+                    <thead>
+                        <tr>
+                            <th>Mã nhân viên</th>
+                            <th>Họ và tên</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                            <th>Điện thoại</th>
+                            <th>Email</th>
+                            <th>Chức vụ</th>
+                            <th>Phòng ban</th>
+                            <th>Mức lương cơ bản</th>
+                            <th>Tình trạng công việc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MF1031</td>
+                            <td>Vũ Văn Quyết</td>
+                            <td>Nam</td>
+                            <td>17/11/2000</td>
+                            <td>0355081702</td>
+                            <td>vuvanquyet1702@gmail.com</td>
+                            <td>Fresher Web</td>
+                            <td>Viện</td>
+                            <td>3.000.000</td>
+                            <td>Đang học việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF1031</td>
+                            <td>Vũ Văn Quyết</td>
+                            <td>Nam</td>
+                            <td>17/11/2000</td>
+                            <td>0355081702</td>
+                            <td>vuvanquyet1702@gmail.com</td>
+                            <td>Fresher Web</td>
+                            <td>Viện</td>
+                            <td>3.000.000</td>
+                            <td>Đang học việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF1031</td>
+                            <td>Vũ Văn Quyết</td>
+                            <td>Nam</td>
+                            <td>17/11/2000</td>
+                            <td>0355081702</td>
+                            <td>vuvanquyet1702@gmail.com</td>
+                            <td>Fresher Web</td>
+                            <td>Viện</td>
+                            <td>3.000.000</td>
+                            <td>Đang học việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF1031</td>
+                            <td>Vũ Văn Quyết</td>
+                            <td>Nam</td>
+                            <td>17/11/2000</td>
+                            <td>0355081702</td>
+                            <td>vuvanquyet1702@gmail.com</td>
+                            <td>Fresher Web</td>
+                            <td>Viện</td>
+                            <td>3.000.000</td>
+                            <td>Đang học việc</td>
+                        </tr>
+                        <tr>
+                            <td>MF1031</td>
+                            <td>Vũ Văn Quyết</td>
+                            <td>Nam</td>
+                            <td>17/11/2000</td>
+                            <td>0355081702</td>
+                            <td>vuvanquyet1702@gmail.com</td>
+                            <td>Fresher Web</td>
+                            <td>Viện</td>
+                            <td>3.000.000</td>
+                            <td>Đang học việc</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="container__main-footer ">
+                <div class="footer-left">
+                    <span>Hiển thị 1-5/1000 nhân viên</span>
+                </div>
+                <div class="footer-center">
+                    <button class="m-button-second m-button-paging m-button-paging-first "></button>
+                    <button class="m-button-second m-button-paging m-button-paging-prev "></button>
+                    <div>
+                        <button class="dot">1</button>
+                        <button class="dot">2</button>
+                        <button class="dot">3</button>
+                        <button class="dot">4</button>
+                    </div>
+                    <button class="m-button-second m-button-paging m-button-paging-next "></button>
+                    <button class="m-button-second m-button-paging m-button-paging-last "></button>
+                </div>
+                <div class="footer-right">
+                    <span>5 nhân viên trên trang</span>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

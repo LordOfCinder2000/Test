@@ -1,0 +1,66 @@
+@import url(/css/base/button.css);
+@import url(/css/base/title.css);
+@import url(/css/base/filter.css);
+@import url(/css/base/input.css);
+@import url(/css/base/header.css);
+@import url(/css/base/navbar.css);
+@import url(/css/base/icon.css);
+@import url(/css/base/dropdownlist.css);
+@import url(/css/base/grid.css);
+@import url(/css/base/footer.css);
+
+/*Dùng chung cho các page*/
+
+body {
+    font-family: GoogleSans;
+    font-size: 13px;
+    color: #454545;
+    box-sizing: inherit;
+    background: #ffffff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__main {
+    width: calc(85.5% - 1px);
+    height: calc(100vh - 48px - 1px);
+    background-color: #e9ebee;
+    display: block;
+    border-top: 1px solid #e5e5e5;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.container__footer {}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Thêm kiểu font chữ */
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(/contents/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+    font-family: GoogleSansMedium;
+    src: url(/contents/font/GoogleSans-Medium.otf);
+}

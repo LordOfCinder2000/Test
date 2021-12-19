@@ -1,0 +1,24 @@
+.m-input {
+    box-sizing: border-box;
+    padding: 0px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    height: 40px;
+}
+
+.m-input::placeholder {
+    font-size: 12px;
+}
+
+
+/* Ô tìm kiếm */
+
+.m-input-search {
+    padding-left: 40px;
+    width: 290px;
+}
+
+.m-input-search:focus {
+    border: 1px solid #019160;
+}
